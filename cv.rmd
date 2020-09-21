@@ -22,7 +22,7 @@ source("cv_printing_functions.r")
 
 # Read in all data and initialize a CV printer object
 CV <- create_CV_object(
-  data_location = "https://docs.google.com/spreadsheets/d/1UksSMngO_n0SNxbgIJKlTk2sOtBLrpb5HmXl9GxBQv0/edit#gid=917338460",  
+  data_location = "https://docs.google.com/spreadsheets/d/1UksSMngO_n0SNxbgIJKlTk2sOtBLrpb5HmXl9GxBQv0/edit?usp=sharing",  
   pdf_mode = params$pdf_mode
 )
 
@@ -69,12 +69,14 @@ CV %>% print_contact_info()
 
 
 
-Language Skills {#skills}
+Skills {#skills}
 --------------------------------------------------------------------------------
 
-```{r}
-CV %>% print_skill_bars()
-```
+- <i class="fab fa-SAS"></i> SAS
+- <i class="fab fa-SAS"></i> SQL
+- <i class="fab fa-r-project"></i> R
+- <i class="fab fa-python"></i> Python
+- <i class="fab fa-html5"></i> HTML
 
 
 
@@ -101,6 +103,10 @@ CV %<>% print_text_block("intro")
 ```
 
 
+Employment {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
@@ -110,6 +116,12 @@ CV %<>% print_section('education')
 ```
 
 
+Certificate {data-icon=book data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('certificate')
+```
 
 Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
