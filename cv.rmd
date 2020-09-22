@@ -68,7 +68,7 @@ Aside
 if(params$pdf_mode){
   cat("View this CV online with links at _tangjackie.github.io_")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/tangjackie/CV/blob/master/cv.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/tangjackie/CV/blob/master/jackietang_cv.pdf)")
 }
 ```
 
@@ -84,18 +84,13 @@ CV %>% print_contact_info()
 Skills {#skills}
 --------------------------------------------------------------------------------
 
-```{r echo=FALSE, out.width="10%"}
-#knitr::include_graphics("img/sas.png")
-```
-- SAS
-```{r echo=FALSE, out.width="10%"}
-#knitr::include_graphics("img/SQL.png")
-```
-- SQL
+
+- <i class="far fa-chart-bar"></i> SAS
+- <i class="fas fa-database"></i> SQL
 - <i class="fab fa-r-project"></i> R
 - <i class="fab fa-python"></i> Python
 - <i class="fab fa-html5"></i> HTML
-- <i class="fab fa-markdown"></i> Markdown
+<!-- - <i class="fab fa-markdown"></i> Markdown -->
 
 
 
