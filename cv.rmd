@@ -48,7 +48,7 @@ Aside
 ```{r}
 # Build interactive network of positions colored by section
 # and connected if they occurred in the same year
-datadrivencv::build_network_logo(CV$entries_data)
+# datadrivencv::build_network_logo(CV$entries_data)
 ```
 
 
@@ -72,11 +72,12 @@ CV %>% print_contact_info()
 Skills {#skills}
 --------------------------------------------------------------------------------
 
-- <i class="fab fa-SAS"></i> SAS
-- <i class="fab fa-SAS"></i> SQL
+- <i class="far fa-chart-bar"></i> SAS
+- <i class="fas fa-database"></i> SQL
 - <i class="fab fa-r-project"></i> R
 - <i class="fab fa-python"></i> Python
 - <i class="fab fa-html5"></i> HTML
+<!-- - <i class="fab fa-markdown"></i> Markdown -->
 
 
 
@@ -85,7 +86,7 @@ Disclaimer {#disclaimer}
 
 Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
 
-The source code is available [on github.com/nstrayer/cv](https://github.com/tangjackie/CV).
+Code available on <i class="fa fa-github"></i> [GitHub](https://github.com/tangjackie/CV).
 
 Last updated on `r Sys.Date()`.
 
@@ -103,9 +104,28 @@ CV %<>% print_text_block("intro")
 ```
 
 
-Employment {data-icon=laptop}
+Current Employment Status {data-icon=id-card}
 --------------------------------------------------------------------------------
 
+```{r}
+CV %<>% print_section('employment_status')
+```
+
+
+Security Clearance {data-icon=fingerprint}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('security_clearance')
+```
+
+
+Second Language Profile {data-icon=language}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('second_language')
+```
 
 
 Education {data-icon=graduation-cap data-concise=true}
@@ -116,48 +136,49 @@ CV %<>% print_section('education')
 ```
 
 
-Certificate {data-icon=book data-concise=true}
+Certificate {data-icon=certificate data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('certificate')
 ```
 
-Research Experience {data-icon=laptop}
+
+Work Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+<!-- ::: aside -->
+<!-- ```{r}  -->
+<!-- CV %<>% print_text_block('work_experience_aside') -->
+<!-- ``` -->
+<!-- ::: -->
+
+```{r}
+CV %<>% print_section('work_experience')
+```
+
+
+Publication {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('research_positions')
+CV %<>% print_section('publication')
 ```
 
-
-
-Industry Experience {data-icon=suitcase}
---------------------------------------------------------------------------------
-
-::: aside
-```{r}
-CV %<>% print_text_block('industy_experience_aside')
-```
-:::
-
-```{r}
-CV %<>% print_section('industry_positions')
-```
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
-<br>
-<br>
-<br>
+<!-- <br> -->
+<!-- <br> -->
+<!-- <br> -->
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
-::: aside
-```{r}
-CV %<>% print_text_block('teaching_experience_aside')
-```
-:::
+<!-- ::: aside -->
+<!-- ```{r}  -->
+<!-- CV %<>% print_text_block('teaching_experience_aside') -->
+<!-- ``` -->
+<!-- ::: -->
 
 ```{r}
 CV %<>% print_section('teaching_positions')
@@ -165,52 +186,4 @@ CV %<>% print_section('teaching_positions')
 
 
 
-Selected Data Science Writing {data-icon=chart-line}
---------------------------------------------------------------------------------
-
-::: aside
-```{r}
-CV %<>% print_text_block('data_science_writing_aside')
-```
-:::
-
-```{r}
-CV %<>% print_section('data_science_writings')
-```
-
-
-
-Selected Press (About)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('about_me_press')
-```
-
-
-<br>
-<br>
-
-
-Selected Press (By)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('by_me_press')
-```
-
-
-
-Selected Publications, Posters, and Talks {data-icon=book}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('academic_articles')
-```
-
-
-
-```{r}
-CV %<>% print_links()
-```
 
