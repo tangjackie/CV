@@ -61,7 +61,7 @@ pagedown::chrome_print(input = tmp_html_cv_loc,
                        timeout = 30, verbose = 2)
 
 
-pagedown::chrome_print(input = 'file:///C:/Users/tangj/Desktop/R/CV/cv.html',
-                       output = "cv.pdf",
-                       timeout = 30, verbose = T)
+# pagedown::chrome_print(input = 'file:///C:/Users/tangj/AppData/Local/Temp/Rtmpkj949d/file4f1c56c7f41.html',
+                       # output = "cv.pdf",
+                       # timeout = 30, verbose = T)
 
