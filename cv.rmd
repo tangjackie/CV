@@ -83,14 +83,30 @@ CV %>% print_contact_info()
 
 Skills {#skills}
 --------------------------------------------------------------------------------
+-
+```{r echo=FALSE, out.width="4%"}
 
+knitr::include_graphics("img/sas.png")
 
-- <i class="far fa-chart-bar"></i> SAS
-- <i class="fas fa-database"></i> SQL
+```
+SAS
+-
+```{r echo=FALSE, out.width="7%"}
+
+knitr::include_graphics("img/sql.png")
+
+```
+SQL
 - <i class="fab fa-r-project"></i> R
 - <i class="fab fa-python"></i> Python
 - <i class="fab fa-html5"></i> HTML
-<!-- - <i class="fab fa-markdown"></i> Markdown -->
+-
+```{r echo=FALSE, out.width="7%"}
+
+knitr::include_graphics("img/markdown.png")
+
+```
+Markdown
 
 
 

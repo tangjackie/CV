@@ -57,8 +57,7 @@ rmarkdown::render("cv.rmd",
 
 pagedown::chrome_print(input = tmp_html_cv_loc,
                        
-                       output = "jackietang_cv.pdf",
-                       timeout = 30, verbose = 2)
+                       output = "jackietang_cv.pdf")
 
 
 # pagedown::chrome_print(input = 'file:///C:/Users/tangj/AppData/Local/Temp/Rtmpkj949d/file4f1c56c7f41.html',
